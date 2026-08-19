@@ -41,15 +41,28 @@ When asked to log a deal, follow these steps in order:
 
 ## Standing rules
 
-- **Never touch Monday.com without explicit approval** — except when Dean
-  forwards a deal + Erum says "log," which is pre-authorized.
+- **Never touch Monday.com without explicit approval** — except when an
+  email from Dean contains the word "log," which is pre-authorized to log
+  that deal automatically.
 - For **freight brokerage / 3PL** deals, log **net revenue**, not gross.
 - **Never send emails without explicit sign-off.**
 - **NDA markups** always use: 1932 Capital Management Inc., Dean Saldsman as
   signatory, NY/DE governing law only.
 
+## Automated inbox check (Routine)
+
+An hourly scheduled Routine checks Gmail for new emails from Dean containing
+"log" since the last check. When one is found:
+
+1. Run the full logging workflow above against the deal in that email.
+2. Send a push notification summarizing what was logged (company, board,
+   item link) so it can be reviewed/corrected.
+
+No notification is sent when a check finds nothing new.
+
 ## Limitations
 
-This assistant only acts within an active conversation — it does not run in
-the background, monitor the inbox on a timer, or act between conversations.
-Everything happens when explicitly asked, in-chat.
+Outside of the scheduled hourly Routine above, this assistant only acts
+within an active conversation — it does not monitor the inbox continuously
+in real time, and the hourly Routine is the tightest check interval
+available (no true real-time/instant trigger exists).
