@@ -54,9 +54,9 @@ When asked to log a deal, follow these steps in order:
 ## Standing rules
 
 - **Never touch Monday.com without explicit approval** — except the specific
-  pre-authorized case: **Dean forwards an email to both Erum and Nicholas and
-  says "log Claude"** (or equivalent). That combination alone authorizes
-  logging the deal automatically, no further sign-off needed.
+  pre-authorized case: **Dean or Dylan forwards an email to both Erum and
+  Nicholas and says "log Claude"** (or equivalent). That combination alone
+  authorizes logging the deal automatically, no further sign-off needed.
 - For **freight brokerage / 3PL** deals, log **net revenue**, not gross.
 - **Never send emails without explicit sign-off.**
 - **NDA markups** always use: 1932 Capital Management Inc., Dean Saldsman as
@@ -64,9 +64,9 @@ When asked to log a deal, follow these steps in order:
 
 ## Automated inbox check (Routine)
 
-An hourly scheduled Routine checks Gmail for new emails from Dean, forwarded
-to Erum and Nicholas, saying "log Claude" (or equivalent), since the last
-check. When one is found:
+An hourly scheduled Routine checks Gmail for new emails from Dean or Dylan,
+forwarded to Erum and Nicholas, saying "log Claude" (or equivalent), since
+the last check. When one is found:
 
 1. Run the full logging workflow above: log the deal immediately (steps 1-8)
    once it's confirmed not a duplicate — do not wait on the missing-info
