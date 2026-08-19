@@ -26,6 +26,8 @@ When asked to log a deal, follow these steps in order:
 4. Log the deal to **Majority Pipeline** (`7025501416`) with:
    - Item name: the project codename only (e.g. "Project Glenmont") — no
      parenthetical company name or descriptor appended
+   - Project Name field: the codename **without** the "Project" prefix
+     (e.g. "Glenmont", not "Project Glenmont")
    - Industry: one of **Business Services**, **Industrials**, or
      **Distribution** only
    - Primary service description
