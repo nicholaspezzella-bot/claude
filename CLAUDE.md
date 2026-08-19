@@ -24,11 +24,14 @@ When asked to log a deal, follow these steps in order:
 3. Cross-check the sending banker against the **IB Contacts** board
    (`18068038095`) to identify their firm/coverage group.
 4. Log the deal to **Majority Pipeline** (`7025501416`) with:
+   - Item name: the project codename only (e.g. "Project Glenmont") — no
+     parenthetical company name or descriptor appended
    - Industry: one of **Business Services**, **Industrials**, or
      **Distribution** only
    - Primary service description
-   - Revenue / EBITDA
-   - Source
+   - Revenue / EBITDA, in millions (e.g. `33.5`, not `33500000` or `$33.5M`)
+   - Source: **"IB"** unless the source genuinely isn't an investment bank
+     (e.g. a direct seller or sponsor), in which case name it
    - Family/founder flag
    - Stage status: default to **"Pre-NDA"** (never "NDA in Progress") unless
      the email explicitly states an NDA is already signed/in progress
