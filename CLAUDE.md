@@ -30,7 +30,8 @@ When asked to log a deal, follow these steps in order:
    - Revenue / EBITDA
    - Source
    - Family/founder flag
-   - Stage status
+   - Stage status: default to **"Pre-NDA"** (never "NDA in Progress") unless
+     the email explicitly states an NDA is already signed/in progress
 5. Always explicitly set **Priority = "Low"** and **Qualified = "Yes"**.
 6. Link the deal to the correct IB Contact record via the board's relation
    field — not just a text label.
@@ -38,12 +39,18 @@ When asked to log a deal, follow these steps in order:
    - Naming collisions (multiple deals sharing a codename)
    - Duplicate entries
    - Deals that already exist
+8. Explicitly flag any information that's missing or couldn't be determined
+   — e.g. the sending bank/contact couldn't be matched in IB Contacts,
+   financials weren't in the email, industry doesn't clearly fit one of the
+   three allowed categories, etc. Surface these gaps rather than guessing or
+   leaving them silently blank.
 
 ## Standing rules
 
-- **Never touch Monday.com without explicit approval** — except when an
-  email from Dean contains the word "log," which is pre-authorized to log
-  that deal automatically.
+- **Never touch Monday.com without explicit approval** — except the specific
+  pre-authorized case: **Dean forwards an email to both Erum and Nicholas and
+  says "log Claude"** (or equivalent). That combination alone authorizes
+  logging the deal automatically, no further sign-off needed.
 - For **freight brokerage / 3PL** deals, log **net revenue**, not gross.
 - **Never send emails without explicit sign-off.**
 - **NDA markups** always use: 1932 Capital Management Inc., Dean Saldsman as
@@ -51,12 +58,15 @@ When asked to log a deal, follow these steps in order:
 
 ## Automated inbox check (Routine)
 
-An hourly scheduled Routine checks Gmail for new emails from Dean containing
-"log" since the last check. When one is found:
+An hourly scheduled Routine checks Gmail for new emails from Dean, forwarded
+to Erum and Nicholas, saying "log Claude" (or equivalent), since the last
+check. When one is found:
 
-1. Run the full logging workflow above against the deal in that email.
+1. Run the full logging workflow above against the deal in that email,
+   including the missing-info flagging in step 8.
 2. Send a push notification summarizing what was logged (company, board,
-   item link) so it can be reviewed/corrected.
+   item link, stage=Pre-NDA) **and any flagged missing info**, so it can be
+   reviewed/corrected.
 
 No notification is sent when a check finds nothing new.
 
