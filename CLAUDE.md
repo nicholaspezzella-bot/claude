@@ -30,7 +30,8 @@ When asked to log a deal, follow these steps in order:
      (e.g. "Glenmont", not "Project Glenmont")
    - Industry: one of **Business Services**, **Industrials**, or
      **Distribution** only
-   - Primary service description
+   - Primary service description: **5 words max, Title Case** (e.g.
+     "Beverage Contract Co-Manufacturer")
    - Revenue / EBITDA, in millions (e.g. `33.5`, not `33500000` or `$33.5M`)
    - Source: **"IB"** unless the source genuinely isn't an investment bank
      (e.g. a direct seller or sponsor), in which case name it
