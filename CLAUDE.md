@@ -35,7 +35,8 @@ When asked to log a deal, follow these steps in order:
    - Revenue / EBITDA, in millions (e.g. `33.5`, not `33500000` or `$33.5M`)
    - Source: **"IB"** unless the source genuinely isn't an investment bank
      (e.g. a direct seller or sponsor), in which case name it
-   - Family/founder flag
+   - Ownership type: **Founder**, **Family/Founder**, **PE**, or other, as
+     stated in the email/teaser (flag as unknown if not stated — don't guess)
    - Stage status: default to **"Pre-NDA"** (never "NDA in Progress") unless
      the email explicitly states an NDA is already signed/in progress
 5. Always explicitly set **Priority = "Low"** and **Qualified = "Yes"**.
