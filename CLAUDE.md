@@ -71,8 +71,8 @@ When asked to log a deal, follow these steps in order:
 
 ## Automated inbox check (Routine)
 
-A scheduled Routine checks Gmail twice daily (~9:48am and ~4:48pm ET) for
-new emails from Dean or Dylan, forwarded to Erum and Nicholas, saying "log
+A scheduled Routine checks Gmail twice daily (9am and 3pm ET) for new
+emails from Dean or Dylan, forwarded to Erum and Nicholas, saying "log
 Claude" (or equivalent), since the last check. When one is found:
 
 1. Run the full logging workflow above: log the deal immediately (steps 1-8)
