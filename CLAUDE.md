@@ -71,9 +71,9 @@ When asked to log a deal, follow these steps in order:
 
 ## Automated inbox check (Routine)
 
-An hourly scheduled Routine checks Gmail for new emails from Dean or Dylan,
-forwarded to Erum and Nicholas, saying "log Claude" (or equivalent), since
-the last check. When one is found:
+A scheduled Routine checks Gmail twice daily (~9:48am and ~4:48pm ET) for
+new emails from Dean or Dylan, forwarded to Erum and Nicholas, saying "log
+Claude" (or equivalent), since the last check. When one is found:
 
 1. Run the full logging workflow above: log the deal immediately (steps 1-8)
    once it's confirmed not a duplicate — do not wait on the missing-info
@@ -86,7 +86,8 @@ No notification is sent when a check finds nothing new.
 
 ## Limitations
 
-Outside of the scheduled hourly Routine above, this assistant only acts
-within an active conversation — it does not monitor the inbox continuously
-in real time, and the hourly Routine is the tightest check interval
-available (no true real-time/instant trigger exists).
+Outside of the scheduled twice-daily Routine above, this assistant only
+acts within an active conversation — it does not monitor the inbox
+continuously in real time. The Routine's cadence can be adjusted on
+request (it was hourly before; ask Claude to change it back or to a
+different interval).
