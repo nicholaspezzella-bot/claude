@@ -24,6 +24,10 @@ When asked to log a deal, follow these steps in order:
 3. Cross-check the sending banker against the **IB Contacts** board
    (`18068038095`) to identify their firm/coverage group.
 4. Log the deal to **Majority Pipeline** (`7025501416`) with:
+   - Group: always the **"Pipeline"** group (group id `topics`) — never
+     "Priority Deals" (`group_mm6cyn00`, the board's default/top group) or
+     any other group. Pass `groupId: "topics"` explicitly on every
+     `create_item` call; don't rely on the API's default group.
    - Item name: the project codename only (e.g. "Project Glenmont") — no
      parenthetical company name or descriptor appended
    - Project Name field: the codename **without** the "Project" prefix
